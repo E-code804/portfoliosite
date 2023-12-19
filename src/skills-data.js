@@ -6,14 +6,20 @@ import Javascript from "./assets/skills/Javascript.svg";
 import Linux from "./assets/skills/Linux.svg";
 import Mongo from "./assets/skills/MongoDB.svg";
 import Node from "./assets/skills/Node.svg";
+import OCaml from "./assets/skills/OCaml_Logo.svg";
 import Python from "./assets/skills/Python.svg";
 import React from "./assets/skills/React.svg";
+import R from "./assets/skills/Rlogo.svg";
 import SQL from "./assets/skills/SQL.svg";
 
 const languages = [
   {
     skill: "Python",
     src: Python,
+  },
+  {
+    skill: "R",
+    src: R,
   },
   {
     skill: "Java",
@@ -50,6 +56,10 @@ const languages = [
   {
     skill: "Node",
     src: Node,
+  },
+  {
+    skill: "OCaml",
+    src: OCaml,
   },
   {
     skill: "Linux",

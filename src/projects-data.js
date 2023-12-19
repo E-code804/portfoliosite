@@ -1,46 +1,49 @@
 const projects = [
-    {
-        title: "JPEG Compressor",
-        description: "A lossy jpeg compressor and decompressor. Utilizes color space conversion, quantization, bit packing, etc.",
-        langs: ["C"],
-        link: "https://github.com/bergj21/Image-Compressor"
-    },
-    {
-        title: "Grep Command",
-        description: "The grep command which searches for text in a tree of directories. Implemented a quadratic probing hash table to store and retrieve text from.",
-        langs: ["C++"],
-        link: "https://github.com/bergj21/Grep-Command"
-    },
-    {
-        title: "Travel Journal",
-        description: "A web application that acts as a journal for travel information.",
-        langs: ["React", "HTML", "CSS"],
-        link: "https://github.com/bergj21/Travel-Journal"
-    },
-    {
-        title: "Universal Machine",
-        description: "A Universal Machine that handles 14 RISC-style instructions. Emulates the state, logic, and hardware of a computer to run a given program.",
-        langs: ["C"],
-        link: "https://github.com/bergj21/Universal-Machine"
-    },
-    {
-        title: "RPN Calculator",
-        description: "A Reverse Polish Notation Calculator in Universal Machine Macro Assembler Language. Low-level programming, implementing call stack and following calling conventions.",
-        langs: ["Universal Machine Macro Assembler"],
-        link: "https://github.com/bergj21/RPN-Calculator"
-    },
-    {
-        title: "This website!",
-        description: "I made this website as a portfolio for all of my projects.",
-        langs: ["React", "HTML", "CSS"],
-        link: "https://github.com/bergj21/personal-website"
-    },
-    {
-        title: "JUnit",
-        description: "A JUnit-like testing framework that offers the automated program testing technique QuickCheck.",
-        langs: ["Java"],
-        link: "https://github.com/bergj21/JUnit"
-    }
-]
+  {
+    title: "Menu Master",
+    description:
+      "A full-stack web app that allows users to query select restaurants based on price and cuisine as well as leave reviews on them - deployed via Vercel.",
+    langs: ["MERN Stack", "Next.js"],
+    link: "https://github.com/E-code804/MenuMasterNextJS",
+    site: "https://menu-master-next-js.vercel.app/",
+  },
+  {
+    title: "Post-It Notes",
+    description:
+      "Made with the MERN stack and deployed to render.com (slow backend due to free tier). Login to your own account and save your personal notes.",
+    langs: ["MERN Stack", "JSON Web Token"],
+    link: "https://github.com/E-code804/PostItMern",
+    site: "https://post-it-mern.vercel.app/",
+  },
+  {
+    title: "Movie Land",
+    description:
+      "Utilizing the OMDb API, search and view for your favorite movies.",
+    langs: ["HTML", "CSS", "Next.JS"],
+    link: "https://github.com/E-code804/MovieLandNextJS",
+    site: "https://movie-land-next-js.vercel.app/",
+  },
+  {
+    title: "Reservation Cancellation Model",
+    description:
+      "Utilizing MySQL and R, I created a linear model using a hotel booking dataset from Kaggle to determine whether certain factors affected a reserver's decision to cancel their reservation.",
+    langs: ["SQL", "R"],
+    link: "https://github.com/E-code804/CMSC398E_final",
+  },
+  {
+    title: "Command Execution Project",
+    description:
+      "A project from my computer systems class, it uses a tree structure to execute some command line commands such as cd, &&, ||, |, and ().",
+    langs: ["C"],
+    link: "https://github.com/E-code804/project6_216",
+  },
+  {
+    title: "MicrOCaml",
+    description:
+      "A miniature version of the OCaml compiler. Uses a lexer to create tokens from a user's input. Those tokens are then read my a parser before finally being evaluated and producing an output.",
+    langs: ["OCaml"],
+    link: "https://github.com/E-code804/project4_330",
+  },
+];
 
 export default projects;

@@ -16,7 +16,16 @@ function Project(props) {
         </a>
       </div>
       <div className="proj-body">
-        <p>{props.description}</p>
+        <p>
+          {props.description}{" "}
+          {props.site ? (
+            <a target="blank" className="site-style" href={props.site}>
+              View here.
+            </a>
+          ) : (
+            ""
+          )}
+        </p>
         <div className="proj-footer">
           <p>Languages, Frameworks, Tools:</p>
           {props.langs.map((lang, index) => (
