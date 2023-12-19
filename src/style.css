@@ -45,14 +45,13 @@ img {
 html {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 /* ---------------------- */
 /* CSS Variables          */
 /* ---------------------- */
 :root {
-  --main-bg-color: #fcfcfc; /* Slighty darker white */
+  --main-bg-color: #f9f9f9; /* Slighty darker white */
   --main-text-color: #333333; /* Dark Gray for main text */
   --accent-color: #3498db; /* Blue */
   --hover-color: #2980b9; /* Slightly darker blue for hover effects */
@@ -105,14 +104,19 @@ main {
 }
 
 .nav-menu li {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .nav-menu p {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--main-bg-color);
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
   border-radius: 10px;
-  padding: 8px;
+  padding: 8px 20px;
   transition: 0.4s;
+  font-size: 16px;
+  width: 100px;
+  text-align: center;
 }
 
 .nav-menu p:hover {
@@ -315,7 +319,11 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 935px) {
+@media screen and (max-width: 1172px) {
+  .bio {
+    display: flex;
+    flex-direction: column;
+  }
   .img-container {
     margin-bottom: 25px;
   }
@@ -431,15 +439,15 @@ main {
   }
 
   .projects-container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 
 @media screen and (max-width: 476px) {
   .proj-header h1 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .projects-container {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }

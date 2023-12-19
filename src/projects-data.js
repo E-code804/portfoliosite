@@ -40,7 +40,7 @@ const projects = [
   {
     title: "MicrOCaml",
     description:
-      "A miniature version of the OCaml compiler. Uses a lexer to create tokens from a user's input. Those tokens are then read my a parser before finally being evaluated and producing an output.",
+      "A miniature version of the OCaml compiler. Uses a lexer to create tokens from a user's input. Those tokens are then read by a parser before finally being evaluated and producing an output.",
     langs: ["OCaml"],
     link: "https://github.com/E-code804/project4_330",
   },
