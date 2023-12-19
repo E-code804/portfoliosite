@@ -2,11 +2,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-const Project = ({ title, link, description, langs, site }) => {
+const Project = ({ title, link, description, langs, site, darkMode }) => {
   const langsLength = langs.length;
   return (
     <div className="project-container">
-      <div className="proj-header">
+      <div className={`proj-header ${darkMode ? "proj-header-dark" : ""}`}>
         <h1>{title}</h1>
         <a href={link} target="_blank" rel="noreferrer">
           <FontAwesomeIcon
@@ -16,11 +16,17 @@ const Project = ({ title, link, description, langs, site }) => {
           ></FontAwesomeIcon>
         </a>
       </div>
-      <div className="proj-body">
+      <div
+        className={`proj-body ${darkMode ? "proj-body-dark dark-text" : ""}`}
+      >
         <p>
           {description}{" "}
           {site ? (
-            <a target="blank" className="site-style" href={site}>
+            <a
+              target="blank"
+              className={`site-style ${darkMode ? "dark-text" : ""}`}
+              href={site}
+            >
               View here.
             </a>
           ) : (

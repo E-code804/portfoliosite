@@ -3,13 +3,13 @@ import About from "./About";
 import ProjectsContainer from "./ProjectsContainer.js";
 import SkillsContainer from "./SkillsContainer";
 
-const Content = () => {
+const Content = ({ darkMode }) => {
   return (
-    <div className="content">
-      <About />
-      <SkillsContainer />
-      <h1>Projects</h1>
-      <ProjectsContainer />
+    <div className={`content ${darkMode ? "dark-bg" : ""}`}>
+      <About darkMode={darkMode} />
+      <SkillsContainer darkMode={darkMode} />
+      <h1 className={`${darkMode ? "dark-text" : ""}`}>Projects</h1>
+      <ProjectsContainer darkMode={darkMode} />
     </div>
   );
 };

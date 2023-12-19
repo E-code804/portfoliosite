@@ -3,20 +3,26 @@ import React, { useState } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import lightModeIcon from "../assets/light-mode-icon.png";
+import darkModeIcon from "../assets/moon-icon.svg";
 import pdf from "../assets/resume.pdf";
 
 library.add(faGithub);
 
-const Header = () => {
+const Header = ({ darkMode, setDarkMode }) => {
   const [isActiveHamburger, setIsActiveHamburger] = useState(false);
 
   const toggleActiveHamburger = () => {
     setIsActiveHamburger(!isActiveHamburger);
   };
   return (
-    <header className="nav-bar">
-      <h1>Erik Pfeffer</h1>
-      <div className={`link-btns ${isActiveHamburger ? "active" : ""}`}>
+    <header className={`nav-bar ${darkMode ? "nav-bar-dark" : ""}`}>
+      <h1 className={`${darkMode ? "dark-text" : ""}`}>Erik Pfeffer</h1>
+      <div
+        className={`link-btns ${isActiveHamburger ? "active" : ""} ${
+          darkMode ? "dark-bg" : ""
+        }`}
+      >
         <ul className="nav-menu">
           <li className="nav-item">
             <a
@@ -26,7 +32,9 @@ const Header = () => {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="icon"
+                className={`${
+                  darkMode ? "dark-text dark-nav-icon-size" : "icon"
+                }`}
               ></FontAwesomeIcon>
             </a>
           </li>
@@ -38,7 +46,9 @@ const Header = () => {
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="icon"
+                className={`${
+                  darkMode ? "dark-text dark-nav-icon-size" : "icon"
+                }`}
               ></FontAwesomeIcon>
             </a>
           </li>
@@ -56,6 +66,20 @@ const Header = () => {
               <p>Resume</p>
             </a>
           </li>
+          <li className="nav-item">
+            <button
+              className="toggle-icon"
+              onClick={() => {
+                setDarkMode(!darkMode);
+              }}
+            >
+              <img
+                className="toggle-img"
+                src={darkMode ? lightModeIcon : darkModeIcon}
+                alt="Light or Dark Mode icon"
+              />
+            </button>
+          </li>
         </ul>
       </div>
 
@@ -63,9 +87,9 @@ const Header = () => {
         className={`hamburger ${isActiveHamburger ? "active" : ""}`}
         onClick={toggleActiveHamburger}
       >
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+        <span className={`bar ${darkMode ? "dark-bar" : ""}`}></span>
+        <span className={`bar ${darkMode ? "dark-bar" : ""}`}></span>
+        <span className={`bar ${darkMode ? "dark-bar" : ""}`}></span>
       </div>
     </header>
   );
