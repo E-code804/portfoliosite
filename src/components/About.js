@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 let img = require("../assets/about/erik.jpeg");
 
-function About() {
+const About = () => {
   return (
     <div className="about-section">
       <div className="description">
@@ -25,7 +25,7 @@ function About() {
                   .typeString("machine learning.")
                   .pauseFor(1500)
                   .deleteAll()
-                  .typeString("full stack development.")
+                  .typeString("full-stack development.")
                   .pauseFor(1500)
                   .deleteAll()
                   .typeString("data science.")
@@ -45,6 +45,6 @@ function About() {
       </div>
     </div>
   );
-}
+};
 
 export default About;

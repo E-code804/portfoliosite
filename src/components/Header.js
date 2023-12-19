@@ -3,12 +3,11 @@ import React, { useState } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import pdf from "../assets/resume.pdf";
 
 library.add(faGithub);
 
-function Header() {
+const Header = () => {
   const [isActiveHamburger, setIsActiveHamburger] = useState(false);
 
   const toggleActiveHamburger = () => {
@@ -70,6 +69,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

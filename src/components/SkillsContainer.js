@@ -2,7 +2,7 @@ import React from "react";
 import languages from "../skills-data";
 import Skill from "./Skill";
 
-function SkillsContainer() {
+const SkillsContainer = () => {
   const lan = languages.map((item, index) => (
     <Skill key={index} string={item.skill} {...item} />
   ));
@@ -14,6 +14,6 @@ function SkillsContainer() {
       <div className="languages-container">{lan}</div>
     </div>
   );
-}
+};
 
 export default SkillsContainer;
