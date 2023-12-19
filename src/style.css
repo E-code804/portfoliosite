@@ -342,13 +342,13 @@ main {
   }
   .img-container {
     margin-bottom: 25px;
+    margin-top: 60px;
   }
   .about-section {
     margin: 0;
   }
   .content {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 100px;
   }
 
   .about-section {
