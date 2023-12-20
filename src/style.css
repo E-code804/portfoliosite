@@ -336,6 +336,11 @@ main {
 }
 
 @media screen and (max-width: 1172px) {
+  .toggle-img {
+    margin: 0;
+    margin-top: -15px;
+  }
+
   .bio {
     display: flex;
     flex-direction: column;

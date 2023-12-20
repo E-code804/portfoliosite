@@ -44,6 +44,13 @@ const projects = [
     langs: ["OCaml"],
     link: "https://github.com/E-code804/project4_330",
   },
+  {
+    title: "Parallel Sorting",
+    description:
+      "I conducted an experiment to assess the impact of parallelizing Merge Sort and Quick Sort on their runtime performance. I systematically compared the runtime of their conventional implementations against their parallelized counterparts, as well as against the performance of Arrays.sort.",
+    langs: ["Java"],
+    link: "https://github.com/E-code804/parallelsorting",
+  },
 ];
 
 export default projects;
