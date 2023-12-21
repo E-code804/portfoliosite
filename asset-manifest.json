@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfoliosite/static/css/main.8acd2ab8.css",
-    "main.js": "/portfoliosite/static/js/main.5aad7562.js",
+    "main.css": "/portfoliosite/static/css/main.a4b88da2.css",
+    "main.js": "/portfoliosite/static/js/main.17a470f1.js",
     "static/media/erik.jpeg": "/portfoliosite/static/media/erik.8234ee764aede6f1d740.jpeg",
     "static/media/resume.pdf": "/portfoliosite/static/media/resume.b804078b3d9df83736e0.pdf",
     "static/media/OCaml_Logo.svg": "/portfoliosite/static/media/OCaml_Logo.ee55aeea9313a23979ac2d68dd8a3e7d.svg",
@@ -19,11 +19,11 @@
     "static/media/C.svg": "/portfoliosite/static/media/C.c33d9d236f7008b638b4bd26195bdac8.svg",
     "index.html": "/portfoliosite/index.html",
     "static/media/Javascript.svg": "/portfoliosite/static/media/Javascript.b879f838faf1cb951d1c2230fd933a39.svg",
-    "main.8acd2ab8.css.map": "/portfoliosite/static/css/main.8acd2ab8.css.map",
-    "main.5aad7562.js.map": "/portfoliosite/static/js/main.5aad7562.js.map"
+    "main.a4b88da2.css.map": "/portfoliosite/static/css/main.a4b88da2.css.map",
+    "main.17a470f1.js.map": "/portfoliosite/static/js/main.17a470f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.8acd2ab8.css",
-    "static/js/main.5aad7562.js"
+    "static/css/main.a4b88da2.css",
+    "static/js/main.17a470f1.js"
   ]
 }
