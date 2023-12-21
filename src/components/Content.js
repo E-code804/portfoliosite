@@ -8,7 +8,9 @@ const Content = ({ darkMode }) => {
     <div className={`content ${darkMode ? "dark-bg" : ""}`}>
       <About darkMode={darkMode} />
       <SkillsContainer darkMode={darkMode} />
-      <h1 className={`${darkMode ? "dark-text" : ""}`}>Projects</h1>
+      <h1 id="project-header" className={`${darkMode ? "dark-text" : ""}`}>
+        Projects
+      </h1>
       <ProjectsContainer darkMode={darkMode} />
     </div>
   );
