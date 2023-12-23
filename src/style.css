@@ -17,11 +17,6 @@
   margin: 0;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 #skill-gh {
   color: white;
   margin-right: 15px;
@@ -58,11 +53,9 @@ html {
   --accent-color2: #04d9ff;
 }
 
-/* to push footer to the bottom of page when content is shorter than viewheight port */
 .app {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   min-height: 100vh;
   background-color: var(--main-bg-color);
   font-family: "Open Sans";
@@ -122,6 +115,7 @@ main {
   height: 30px;
   width: 30px;
   margin-top: 5px;
+  z-index: 10;
 }
 
 .nav-menu p {
@@ -156,19 +150,16 @@ main {
 /* About Section */
 
 .content {
-  padding-top: 100px;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding: 100px 140px 0;
 }
 
 .about-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0 25px;
   vertical-align: text-top;
   display: flex;
   justify-content: space-between;
   /* height: 400px; */
-  margin: 0 10% 0;
+  margin: 0 10%;
 }
 
 .description {
@@ -183,14 +174,14 @@ main {
   font-family: VT323;
   color: var(--accent-color);
   font-size: 35px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .about-name {
   font-family: Roboto;
   color: var(--main-text-color);
   font-size: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   letter-spacing: 1px;
 }
 
@@ -340,6 +331,7 @@ main {
   .bio {
     display: flex;
     flex-direction: column;
+    width: 50%;
   }
   .img-container {
     margin-bottom: 25px;
@@ -354,6 +346,12 @@ main {
     margin: 0;
     text-align: center;
     flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .description {
+    width: 100%;
+    display: flex;
     align-items: center;
   }
 
@@ -373,8 +371,12 @@ main {
     font-size: 18px;
   }
 
+  .main-h1 {
+    font-size: 32px;
+  }
+
   .typewriter {
-    display: inline-block;
+    display: inline;
     font-size: 18px;
   }
 
@@ -444,6 +446,10 @@ main {
 
   .link-btns button:hover {
     color: #000;
+  }
+
+  .footer {
+    padding-top: 8px;
   }
 }
 
