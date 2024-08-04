@@ -1,13 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c334db9.css",
-    "main.js": "/static/js/main.7e3bb0d5.js",
-    "index.html": "/index.html",
-    "main.8c334db9.css.map": "/static/css/main.8c334db9.css.map",
-    "main.7e3bb0d5.js.map": "/static/js/main.7e3bb0d5.js.map"
+    "main.css": "/portfoliosite/static/css/main.6bdcec6a.css",
+    "main.js": "/portfoliosite/static/js/main.74b52050.js",
+    "static/media/erik.jpeg": "/portfoliosite/static/media/erik.8234ee764aede6f1d740.jpeg",
+    "static/media/resume.pdf": "/portfoliosite/static/media/resume.7fa499e11c4a25b40a78.pdf",
+    "static/media/OCaml_Logo.svg": "/portfoliosite/static/media/OCaml_Logo.ee55aeea9313a23979ac2d68dd8a3e7d.svg",
+    "static/media/Node.svg": "/portfoliosite/static/media/Node.c6da30c5991e7e7ca08ac35edbf6694d.svg",
+    "static/media/Linux.svg": "/portfoliosite/static/media/Linux.e9286898cca413482a1b38b0a75f88f9.svg",
+    "static/media/React.svg": "/portfoliosite/static/media/React.d0eff64f2012a5cb918a122287ae6e4b.svg",
+    "static/media/Python.svg": "/portfoliosite/static/media/Python.92e4e064e65c60fc67358d0cb585cddd.svg",
+    "static/media/Java.svg": "/portfoliosite/static/media/Java.1661110105411d452ccb92299c1a458e.svg",
+    "static/media/CSS.svg": "/portfoliosite/static/media/CSS.af61c7ad52304a3f7d1218baaa699e09.svg",
+    "static/media/SQL.svg": "/portfoliosite/static/media/SQL.efb7363b2e231ddf7a5c31626c04099d.svg",
+    "static/media/Rlogo.svg": "/portfoliosite/static/media/Rlogo.2da55f926557c943ffe724d11774aa44.svg",
+    "static/media/MongoDB.svg": "/portfoliosite/static/media/MongoDB.1aca075d5cce0819fea7ea0902d94ce4.svg",
+    "static/media/moon-icon.svg": "/portfoliosite/static/media/moon-icon.3faf560f51b0b30d37d08bf4da2967a3.svg",
+    "static/media/Git.svg": "/portfoliosite/static/media/Git.c60b7e5ae8ec2562f23fdddcab300026.svg",
+    "static/media/C.svg": "/portfoliosite/static/media/C.c33d9d236f7008b638b4bd26195bdac8.svg",
+    "index.html": "/portfoliosite/index.html",
+    "static/media/Javascript.svg": "/portfoliosite/static/media/Javascript.b879f838faf1cb951d1c2230fd933a39.svg",
+    "main.6bdcec6a.css.map": "/portfoliosite/static/css/main.6bdcec6a.css.map",
+    "main.74b52050.js.map": "/portfoliosite/static/js/main.74b52050.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c334db9.css",
-    "static/js/main.7e3bb0d5.js"
+    "static/css/main.6bdcec6a.css",
+    "static/js/main.74b52050.js"
   ]
 }
