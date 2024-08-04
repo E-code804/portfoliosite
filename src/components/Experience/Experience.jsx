@@ -1,16 +1,12 @@
-import React, { useState } from 'react'
-import './Experience.css'
-import { ExperienceItems } from './ExperienceItems';
+import React, { useState } from "react";
+import "./Experience.css";
+import { ExperienceItems } from "./ExperienceItems";
+import TabContent from "./TabContent";
 
 const Experience = () => {
-
-	const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(0);
   return (
-    <section
-      className="experience_section"
-      id="experience"
-      data-aos="fade-up"
-    >
+    <section className="experience_section" id="experience" data-aos="fade-up">
       <h3 className="experience_title section_title">Experience</h3>
       <div className="experience_container">
         <ul className="tabs-container">
@@ -28,29 +24,6 @@ const Experience = () => {
       </div>
     </section>
   );
-}
+};
 
-const TabContent = ({tab}) =>{
-	return (
-    <div className="tab-content-container">
-      <div className="tab_heading">
-        <h3>
-          {tab.role} <span>@ {tab.company}</span>
-        </h3>
-        <p>
-          {tab.start} - {tab.end}
-        </p>
-      </div>
-      <ul>
-        {tab.detail.map((detail, idx) => (
-          <li className="content_detail" key={idx}>
-            <img src="assets/bullet-point.svg" alt="bullet point" />
-            <p>{detail}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-export default Experience
+export default Experience;

@@ -11,6 +11,7 @@ function About() {
             I'm a Senior at UMD majoring in
             <span> Computer Science</span> and minoring in <span>Statistics</span>.
           </p>
+
           <p>
             I am a passionate programmer interested in the fields of{" "}
             <span>
@@ -22,6 +23,7 @@ function About() {
             Engineering/Data Science role for full-time or internship.
           </p>
         </div>
+
         <div className="about_image">
           <div className="about_img_container">
             <img src="assets/erik.jpeg" alt="Erik Profile Pic" />

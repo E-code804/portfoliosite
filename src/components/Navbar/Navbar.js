@@ -4,6 +4,7 @@ import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
 import resume from "./resume.pdf";
 
+// Navbat
 const Navbar = ({ theme, toggleTheme }) => {
   const [clicked, setclicked] = useState(false);
   const [isAtTop, setIsAtTop] = useState(window.scrollY === 0);

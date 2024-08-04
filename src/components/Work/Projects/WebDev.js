@@ -27,7 +27,7 @@ export const WebDev = [
         url: "https://github.com/E-code804/SPD_Attendance_next",
       },
     ],
-    hyperlink: "https://menu-master-next-js.vercel.app/",
+    hyperlink: "https://github.com/E-code804/SPD_Attendance_next",
   },
   {
     name: "Taskify",

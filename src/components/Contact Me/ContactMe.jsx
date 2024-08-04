@@ -1,15 +1,15 @@
 import React from "react";
 import "./ContactMe.css";
 
+// Could refactor contact title/subtitles into elements.
 const ContactMe = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
+  const handleSubmit = (event) => event.preventDefault();
 
   return (
     <div className="form" id="contact" data-aos="fade-up">
       <div className="form-label-container">
         <h1>Contact Me</h1>
+
         <p>Let's get in touch!</p>
       </div>
 
@@ -17,26 +17,34 @@ const ContactMe = () => {
         <div>
           <div className="contact_information">
             <i className="fa-solid fa-phone"></i>
+
             <div>
               <h3 className="contact_title">Call Me</h3>
+
               <span className="contact_subtitle">551-235-2918</span>
             </div>
           </div>
           <div className="contact_information">
             <i className="fa-solid fa-envelope"></i>
+
             <div>
               <h3 className="contact_title">Email</h3>
+
               <span className="contact_subtitle">erikpfeffer5@gmail.com</span>
             </div>
           </div>
+
           <div className="contact_information">
             <i className="fa-solid fa-location-dot"></i>
+
             <div>
               <h3 className="contact_title">Location</h3>
+
               <span className="contact_subtitle">Haworth, NJ/College Park, MD</span>
             </div>
           </div>
         </div>
+
         <form onSubmit={handleSubmit} className="message_form">
           <div className="form_content double">
             <div className="form_input">
@@ -62,6 +70,7 @@ const ContactMe = () => {
               <label>Message</label>
             </div>
           </div>
+
           <button className="form_submit" type="submit">
             Send Message <i className="fa-solid fa-paper-plane"></i>{" "}
           </button>
