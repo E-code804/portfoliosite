@@ -82,6 +82,9 @@ const Navbar = ({ theme, toggleTheme }) => {
           <a className="resume_btn" href={resume} target="_blank">
             Resume
           </a>
+          <a className="resume_btn" href="/resume.pdf" target="_blank">
+            Resume
+          </a>
         </li>
         <li className={`nav-link`} onClick={toggleTheme}>
           <i
