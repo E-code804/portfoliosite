@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
+import { NavHashLink } from "react-router-hash-link";
 import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
-import { NavHashLink } from "react-router-hash-link";
+import resume from "./resume.pdf";
 
-const Navbar = ({theme, toggleTheme}) => {
+const Navbar = ({ theme, toggleTheme }) => {
   const [clicked, setclicked] = useState(false);
   const [isAtTop, setIsAtTop] = useState(window.scrollY === 0);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -14,16 +15,13 @@ const Navbar = ({theme, toggleTheme}) => {
 
   useEffect(() => {
     const html_tag = document.getElementsByTagName("html")[0];
-    if (clicked)
-      html_tag.style = "overflow: hidden";
-    else
-      html_tag.style = "";
-  }, [clicked])
-  
+    if (clicked) html_tag.style = "overflow: hidden";
+    else html_tag.style = "";
+  }, [clicked]);
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    setIsAtTop(currentScrollPos === 0)
+    setIsAtTop(currentScrollPos === 0);
   };
 
   // new useEffect:
@@ -32,44 +30,39 @@ const Navbar = ({theme, toggleTheme}) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isAtTop]);
 
-  useEffect(()=>{
-    const appDiv = document.getElementById('App');
-    if (clicked){
-      appDiv.className = "App fixed"
+  useEffect(() => {
+    const appDiv = document.getElementById("App");
+    if (clicked) {
+      appDiv.className = "App fixed";
     } else {
-      appDiv.className = "App"
+      appDiv.className = "App";
     }
-  },[clicked])
+  }, [clicked]);
 
-   useLayoutEffect(() => {
-     function updateSize() {
-       setWindowWidth(window.innerWidth);
-     }
-     window.addEventListener("resize", updateSize);
-     updateSize();
-     return () => window.removeEventListener("resize", updateSize);
-   }, []);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
 
-   useEffect(()=>{
-    if (windowWidth > 850){
+  useEffect(() => {
+    if (windowWidth > 850) {
       setclicked(false);
     }
-  },[windowWidth]);
+  }, [windowWidth]);
 
-  function handleNavClick(){
-    if (clicked){
+  function handleNavClick() {
+    if (clicked) {
       setclicked(false);
     }
   }
 
   return (
     <nav className={`nav${isAtTop ? "" : " shadow"}${clicked ? "" : " blur"}`}>
-      <img
-        src="assets/mb-logo.svg"
-        alt=""
-        className="nav-logo"
-        data-aos="fade"
-      />
+      <img src="assets/mb-logo.svg" alt="" className="nav-logo" data-aos="fade" />
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return (
@@ -86,7 +79,7 @@ const Navbar = ({theme, toggleTheme}) => {
           );
         })}
         <li data-aos="fade-down" data-aos-delay="400" className="nav-link">
-          <a className="resume_btn" href="/resume.pdf">
+          <a className="resume_btn" href={resume} target="_blank">
             Resume
           </a>
         </li>
