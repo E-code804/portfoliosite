@@ -12,9 +12,9 @@ const Work = () => {
         Work I've done in...
       </h1>
 
-      {projectTypes.map((key, idx) => {
-        return <DisplayWork projectType={key} projects={Projects[key]} key={idx} />;
-      })}
+      {projectTypes.map((key, idx) => (
+        <DisplayWork projectType={key} projects={Projects[key]} key={idx} />
+      ))}
     </section>
   );
 };

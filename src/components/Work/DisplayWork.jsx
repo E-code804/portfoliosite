@@ -1,5 +1,4 @@
 import React from "react";
-import { Projects } from "./Projects/Projects";
 import WorkCard from "./WorkCard";
 
 const DisplayWork = ({ projectType, projects }) => {
