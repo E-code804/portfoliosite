@@ -4,6 +4,8 @@ import React, { useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
 import { Typewriter } from "react-simple-typewriter";
 import "./Home.css";
+// import Guy from "./guy-image.png";
+
 function Home() {
   useEffect(() => {
     Aos.init({ duration: 100 });
@@ -51,7 +53,13 @@ function Home() {
           </HashLink>
         </div>
         <div className="home_img" data-aos="fade-left" data-aos-delay="1500">
-          <img src="assets/guy-image.png" alt="" />
+          {/* For local Purposes */}
+          {/* <img id="home-pfp" src={Guy} alt="Erik Pfeffer Cartoon Profile" /> */}
+          <img
+            id="home-pfp"
+            src="assets/guy-image.png"
+            alt="Erik Pfeffer Cartoon Profile"
+          />
         </div>
       </div>
       <div className="home_scroll">
