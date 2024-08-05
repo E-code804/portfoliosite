@@ -19,8 +19,11 @@ const ContactMe = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    //http://localhost:5001/send
+    const url = "https://portfolio-contact-form-x6k6.onrender.com/send";
+
     try {
-      const res = await fetch("http://localhost:5001/send", {
+      const res = await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
