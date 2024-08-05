@@ -11,11 +11,7 @@ const Skills = (props) => {
       </h1>
       <div className="skills-list">
         {SkillItems.map((skill, idx) => (
-          <SkillCategory
-            name={skill.name}
-            items={skill.items}
-            key={idx}
-          ></SkillCategory>
+          <SkillCategory name={skill.name} items={skill.items} key={idx} />
         ))}
       </div>
     </section>

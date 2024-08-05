@@ -1,9 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactMe.css";
 
 // Could refactor contact title/subtitles into elements.
+// Could enforce filling all parts of form.
 const ContactMe = () => {
-  const handleSubmit = (event) => event.preventDefault();
+  const [formData, setFormData] = useState({
+    firstName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const res = await fetch("http://localhost:5001/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        alert("Message sent successfully!");
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      alert("An error occurred: " + error.message);
+    } finally {
+      setFormData({
+        firstName: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    }
+  };
 
   return (
     <div className="form" id="contact" data-aos="fade-up">
@@ -48,25 +88,47 @@ const ContactMe = () => {
         <form onSubmit={handleSubmit} className="message_form">
           <div className="form_content double">
             <div className="form_input">
-              <input name="firstName" className="form-field" />
+              <input
+                name="firstName"
+                className="form-field"
+                value={formData.firstName}
+                onChange={handleChange}
+              />
               <label>Name</label>
             </div>
             <div className="form_input">
-              <input name="email" className="form-field" />
+              <input
+                name="email"
+                type="email"
+                className="form-field"
+                value={formData.email}
+                onChange={handleChange}
+              />
               <label htmlFor="">Email</label>
             </div>
           </div>
 
           <div className="form_content">
             <div className="form_input">
-              <input name="subject" className="form-field" />
+              <input
+                name="subject"
+                className="form-field"
+                value={formData.subject}
+                onChange={handleChange}
+              />
               <label>Subject</label>
             </div>
           </div>
 
           <div className="form_content">
             <div className="form_input">
-              <textarea id="message" name="message" rows="10"></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
               <label>Message</label>
             </div>
           </div>

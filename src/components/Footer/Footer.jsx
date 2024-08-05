@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer">
       <a
-        href={"https://github.com/manish-bhandari/portfolio-website"}
+        href={"https://github.com/E-code804/portfoliosite"}
         target="_blank"
         rel="noopener noreferrer"
       >

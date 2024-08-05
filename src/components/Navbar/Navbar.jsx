@@ -55,11 +55,11 @@ const Navbar = ({ theme, toggleTheme }) => {
     }
   }, [windowWidth]);
 
-  function handleNavClick() {
+  const handleNavClick = () => {
     if (clicked) {
       setclicked(false);
     }
-  }
+  };
 
   return (
     <nav className={`nav${isAtTop ? "" : " shadow"}${clicked ? "" : " blur"}`}>
@@ -80,7 +80,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           );
         })}
         <li data-aos="fade-down" data-aos-delay="400" className="nav-link">
-          <a className="resume_btn" href={resume} target="_blank">
+          <a className="resume_btn" href={resume} target="_blank" rel="noreferrer">
             Resume
           </a>
         </li>
