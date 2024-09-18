@@ -1,5 +1,22 @@
 export const WebDev = [
   {
+    name: "Nutriguard - Food Ingredient Analyzer",
+    utilized: ["React.js", "Next.js", "MongoDB", "OpenAI"],
+    description:
+      "Developed a full-stack application that enables users to upload photos, documents, or input text to analyze food ingredients for potential harmful substances.",
+    links: [
+      {
+        icon: "fa-solid fa-globe",
+        url: "https://nutri-guard.vercel.app/",
+      },
+      {
+        icon: "fa-brands fa-github",
+        url: "https://github.com/E-code804/NutriGuard",
+      },
+    ],
+    hyperlink: "https://nutri-guard.vercel.app/",
+  },
+  {
     name: "Menu Master",
     utilized: ["React", "Express", "Node.js", "MongoDB", "Next.js"],
     description:
